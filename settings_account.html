@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+		<meta name="description" content="Gambolthemes">
+		<meta name="author" content="Gambolthemes">
+		<title>Juanwork - User Verify Account</title>
+		
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="images/fav.png">
+		
+		<!-- Stylesheets -->
+		<link href="css/responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/datepicker.min.css" rel="stylesheet">
+		<link href="css/jquery.range.css" rel="stylesheet">
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+		<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+		<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+		
+		<!-- Semantic Css -->
+		<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+		
+		
+				
+	</head>
+	<body>
+		<!-- Search Model Start -->
+		<div class="modal srch-model fade" id="searchModal" tabindex="-1" role="dialog" aria-hidden="true">
+			<div class="modal-dialog modal-xl" role="document">
+				<div class="modal-content">
+					<div class="modal-header sheader">
+						<button type="button" class="close srch-close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<input type="text" class="srch-input" placeholder="Search Keywords...">
+					</div>				
+				</div>
+			</div>
+		</div>
+		<!-- Search Model End -->
+		<!-- Header Start -->
+		<header>
+			<div class="sub-header">				
+				<div class="container">				
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<nav class="navbar navbar-expand-lg navbar-light bg-dark1 justify-content-sm-start">
+								<img src="images/logo.png" alt=""  width="136" height="40">
+							</nav>							
+							<div class="overlay"></div>
+						</div>					
+					</div>					
+				</div>
+			</div>
+		</header>
+		<!-- Header End -->
+		
+		<!-- Body Start -->	
+		<main class="browse-section">				
+			<div class="container">
+				<div class="row justify-content-md-center">
+					
+					<div class="col-lg-9 col-md-8 mainpage">
+						<div class="account_heading">
+							<div class="account_hd_left">
+								<h2>Manage Your Account</h2>
+							</div>
+							<div class="account_hd_right">
+								<a href="sign_in.html" class="main_lg_btn">Logout</a>
+							</div>
+						</div>
+						<div class="account_tabs">
+							<ul class="nav nav-tabs">
+								
+								<li class="nav-item">
+									<a class="nav-link" href="profile_account.html">Profile Account</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link active" href="settings_account.html">Settings</a>
+								</li>
+							</ul>
+						</div>
+						<div class="jobs_manage">
+							<div class="row justify-content-md-center">																									
+								<div class="col-lg-3">
+									<div class="jobs_tabs">
+										<ul class="nav job_nav nav-tabs" id="myTab" role="tablist">
+											<li class="nav-item">
+												<a class="nav-link active" href="#my_profile" id="my-profile-tab" data-toggle="tab">My Profile</a>
+											</li>
+											
+											<li class="nav-item job_nav_item">
+												<a class="nav-link" href="#change_password" id="change-password-tab" data-toggle="tab">Change Password</a>
+											</li>
+											
+											<li class="nav-item job_nav_item">
+												<a class="nav-link" href="#change_email" id="change-email-tab" data-toggle="tab">Change Email</a>
+											</li>
+											
+											<li class="nav-item job_nav_item">
+												<a class="nav-link" href="#delete_account" id="delete_account-tab" data-toggle="tab">Deactivate Account</a>
+											</li>
+											
+										</ul>
+										
+									</div>
+								</div>
+								<div class="col-lg-9">
+									<div class="tab-content" id="myTabContent">
+										<div class="tab-pane fade show active" id="my_profile" role="tabpanel">
+											<div class="view_chart">
+												<div class="view_chart_header">
+													<h4>My Profile</h4>								
+												</div>
+												<div class="post_job_body">
+													<form>	
+														<div class="row">
+															<div class="col-lg-12">
+																<div class="form-group"><center>
+																	
+																	<div class="avtar_dp">
+																		<span>&nbsp;&nbsp;&nbsp;</span>
+																		<img src="images/profile_dp.jpg" alt="">
+																	</div>
+																	<div class="image-upload-wrap1 ml5">
+																		<input class="file-upload-input1" id="file3" type="file" onchange="readURL(this);" accept="image/*">
+																		<div class="drag-text1">
+																			Upload Files
+																		</div>																	
+																	</div></center>
+																</div>																
+															</div>															
+															<div class="col-lg-6">
+																<div class="form-group">
+																	<label class="label15">First Name*</label>
+																	<input type="text" class="job-input" placeholder="Your First Name">
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="form-group">
+																	<label class="label15">Last Name*</label>
+																	<input type="text" class="job-input" placeholder="Your Last Name">
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="form-group">
+																	<label class="label15">Email Address*</label>
+																	<input type="email" class="job-input" placeholder="Enter Your Email Address">
+																</div>
+															</div>
+															<div class="col-lg-6">
+																<div class="form-group">
+																	<label class="label15">Birthday*</label>
+																	<div class="smm_input">
+																		<input type="text" class="job-input datepicker-here" data-language="en" placeholder="Enter Your Birth Date">
+																		<div class="mix_max"><i class="fas fa-calendar-alt"></i></div>															
+																	</div>															
+																</div>
+															</div>
+															
+															<div class="col-lg-12">
+						 									   <button class="post_jp_btn" type="submit">SAVE CHANGES</button>
+															</div>
+														</div>
+													</form>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tab-pane fade" id="change_password">
+											<div class="view_chart">
+												<div class="view_chart_header">
+													<h4>Change Password</h4>								
+												</div>
+												<div class="post_job_body">
+													<form>
+														<div class="form-group">
+															<label class="label15">Old Password*</label>
+															<input type="password" class="job-input" placeholder="Enter Old Password">
+														</div>
+														<div class="form-group">
+															<label class="label15">New Password*</label>
+															<input type="password" class="job-input" placeholder="Enter New Password">
+														</div>
+														<div class="form-group">
+															<label class="label15">Repeat New Password*</label>
+															<input type="password" class="job-input" placeholder="Enter Repeat New Password">
+														</div>
+														<button class="post_jp_btn" type="submit">Change Password</button>
+													</form>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tab-pane fade" id="change_email">
+											<div class="view_chart">
+												<div class="view_chart_header">
+													<h4>Change Email Address</h4>								
+												</div>
+												<div class="post_job_body">
+													<form>
+														<div class="form-group">
+															<label class="label15">Old Email*</label>
+															<input type="text" class="job-input" placeholder="Enter Old Email Address">
+														</div>
+														<div class="form-group">
+															<label class="label15">New Email*</label>
+															<input type="text" class="job-input" placeholder="Enter New Email Address">
+														</div>
+														<div class="form-group">
+															<label class="label15">Password*</label>
+															<input type="password" class="job-input" placeholder="Enter Password">
+														</div>
+														<button class="post_jp_btn" type="submit">Save and Change</button>
+													</form>
+												</div>
+											</div>
+										</div>
+										
+										<div class="tab-pane fade" id="delete_account" role="tabpanel">
+											<div class="view_chart">
+												<div class="view_chart_header">
+													<h4>Deactivate Account</h4>								
+												</div>
+												<div class="post_job_body">
+													<form>														
+														<div class="form-group">
+															<label class="label15">Please Explain Further**</label>
+															<textarea class="textarea_input" placeholder="Type"></textarea>
+														</div>
+														<div class="form-group">
+															<label class="label15">Password*</label>
+															<input type="password" class="job-input" placeholder="Enter Password">
+														</div>
+														<div class="email_chk">
+															<div class="ui checkbox apply_check">
+																<input type="checkbox">
+																<label style="color:#242424 !important;">Email Option Out.</label>
+															</div>
+														</div>
+														<button class="post_jp_btn" type="submit">Deactivate Account</button>
+													</form>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>	
+							</div>							
+						</div>						
+					</div>																																						
+				</div>
+			</div>					
+		</main>
+		<!-- Body End -->
+		
+		
+		<!-- Scroll to Top Button Start -->
+		<button onclick="topFunction()" id="pageup" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+		<!-- Scroll to Top Button End -->
+		<!-- Scripts js -->	
+		<script src="js/jquery.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/i18n/datepicker.en.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+		<script src="vendor/semantic/semantic.min.js"></script>
+		<script src="js/jquery.range-min.js"></script>
+		<script src="js/custom1.js"></script>
+
+		
+	</body>
+	
+</html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, shrink-to-fit=9">
+		<meta name="description" content="Gambolthemes">
+		<meta name="author" content="Gambolthemes">
+		<title>Juanwork - View Project</title>
+		
+		<!-- Favicon Icon -->
+		<link rel="icon" type="image/png" href="images/fav.png">
+		
+		<!-- Stylesheets -->
+		<link href="css/responsive.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/datepicker.min.css" rel="stylesheet">
+		<link href="css/jquery.range.css" rel="stylesheet">
+		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+		<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+		<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+		
+		<!-- Semantic Css -->
+		<link rel="stylesheet" type="text/css" href="vendor/semantic/semantic.min.css">
+		
+	</head>
+	<body>
+	
+	<!-- Start of Preloader -->
+		<div class="spinner-wrapper">
+   		     <div class="spinner">
+          		<div class="bounce1"></div>
+       			<div class="bounce2"></div>
+           		<div class="bounce3"></div>
+        	</div>
+    	</div>
+   	<!-- end of preloader -->
+	
+	
+	<!-- Add Note Model Start -->
+		<div class="apply_job_form">
+			<div class="modal fade" id="addnoteModal" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-jb" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">Add Note</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="jb_frm">
+								
+								<div class="form_inputs">									
+									<div class="form-group">
+										<div class="ui fluid search selection dropdown skills-search">
+											<input name="tags" type="hidden" value="">
+											<i class="dropdown icon"></i>
+											<input class="search" autocomplete="off" tabindex="0">
+											<span class="sizer" style=""></span>
+											<div class="default text">Priorty</div>
+											<div class="menu transition hidden" tabindex="-1">
+												<div class="item selected" data-value="Job1">High Priorty</div>										
+												<div class="item" data-value="Job2">Medium Priorty</div>										
+												<div class="item" data-value="Job3">Low Priorty</div>																				
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<textarea class="textarea_input" placeholder="Write a Note . . ."></textarea>
+									</div>
+									<center>
+									<div class="apply_btn150">
+										<button class="apply_job50" type="button">ADD NOTE</button>
+										<button class="apply_job_close" type="button" data-dismiss="modal">CANCEL</button>
+									</div>
+									</center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Add Note Model End -->
+	<!-- Apply Job Model Start -->
+		<div class="apply_job_form">
+			<div class="modal fade" id="applyjobModal" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-jb" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabe2">Accomplishment</h5>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="jb_frm">
+								
+								<div class="form_inputs">
+									<div class="form-group">
+										<input type="text" class="job-input" placeholder="Project Title">
+									</div>
+									<div class="form-group">
+										<textarea class="textarea_input" placeholder="Write a Message . . ."></textarea>
+									</div>
+									<div class="form-group">
+										<div class="social201">
+										<input class="scl_input" type="text" placeholder="No File Attachment" disabled>
+										<div class="icon143 y1"><input class="file-upload-input1" id="file01" type="file" onchange="readURL(this);" accept="image/*" title="Add Files">
+										<i class="fas fa-upload"></i></div>
+										</div><br>
+										
+										<div class="social201">
+										<input class="scl_input" type="text" placeholder="No File Attachment" disabled>
+										<div class="icon143 y1"><input class="file-upload-input1" id="file02" type="file" onchange="readURL(this);" accept="image/*" title="Add Files">
+										<i class="fas fa-upload"></i></div>
+										</div><br>
+									</div>
+									<div class="form-group"><center>
+										<div class="col-lg-10">
+										<span>The maximum file attachment size is 50MB. The files must be in PNG, JPG, PDF, or ZIP file format. </span>
+										</div></center>
+										</div>
+									<center>
+									<div class="apply_btn150">
+										<button class="apply_job50" type="button">POST NOW</button>
+										<button class="apply_job_close" type="button" data-dismiss="modal">CANCEL</button>
+									</div>
+									</center>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Apply Job Model End -->
+		
+		<!-- Body Start -->	
+		<header>
+			<div class="top-header" id="start">				
+				<div class="container">				
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="top-header-full">
+								<div class="top-left-hd">
+									<ul>
+										<li><div class="wlcm-text">Welcome to Juanwork</div></li>
+										<li>
+											<div class="lang-icon dropdown">
+												<i class="fas fa-globe ln-glb"></i>
+												<a href="#" class="icon15 dropdown-toggle-no-caret" role="button" data-toggle="dropdown">
+													EN <i class="fas fa-caret-down p-crt"></i>
+												</a>												
+												<div class="dropdown-menu lanuage-dropdown dropdown-menu-left">
+													<a class="link-item" href="#">EN</a>
+												</div>	
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="top-right-hd">
+									<ul>
+										<li class="dropdown">
+											<a href="#" class="icon14 dropdown-toggle-no-caret" role="button" data-toggle="dropdown">
+												<i class="fas fa-envelope"></i><div class="circle-alrt"></div>
+											</a>
+											<div class="dropdown-menu message-dropdown dropdown-menu-right">
+												<div class="user-request-list">
+													<div class="request-users">
+														<div class="user-request-dt">
+															<a href="#"><img src="images/user-dp-1.jpg" alt="">
+																<div class="user-title1">Jassica William </div>
+																<span>Hey How are you John Doe...</span>
+															</a>
+														</div>
+														<div class="time5">2 min ago</div>
+													</div>											
+												</div>
+												<div class="user-request-list">
+													<div class="request-users">
+														<div class="user-request-dt">
+															<a href="#"><img src="images/user-dp-1.jpg" alt="">
+																<div class="user-title1">Rock Smith </div>
+																<span>Interesting Event! I will join this...</span>
+															</a>
+														</div>
+														<div class="time5">5 min ago</div>
+													</div>											
+												</div>	
+												<div class="user-request-list">
+													<div class="request-users">
+														<div class="user-request-dt">
+															<a href="#"><img src="images/user-dp-1.jpg" alt="">
+																<div class="user-title1">Joy Doe </div>
+																<span>Hey Sir! What about you...</span>
+															</a>
+														</div>
+														<div class="time5">10 min ago</div>
+													</div>											
+												</div>	
+												<div class="user-request-list">
+													<a href="my_freelancer_messages.html" class="view-all">View All Messages</a>
+												</div>	
+											</div>
+										</li>
+										<li class="dropdown">
+											<a href="#" class="icon14 dropdown-toggle-no-caret" role="button" data-toggle="dropdown">
+												<i class="fas fa-bell"></i><div class="circle-alrt"></div>
+											</a>
+											<div class="dropdown-menu message-dropdown dropdown-menu-right">
+												<div class="user-request-list">
+													<div class="request-users">
+														<div class="user-request-dt">
+															<a href="#">
+																<div class="noti-icon"><i class="fas fa-users"></i></div>
+																<div class="user-title1">Rock William </div>
+																<span>applied for a <ins class="noti-p-link">Php Developer</ins>.</span>
+															</a>
+														</div>															
+													</div>											
+												</div>														
+												<div class="user-request-list">
+													<div class="request-users">
+														<div class="user-request-dt">
+															<a href="#">
+																<div class="noti-icon"><i class="fas fa-bullseye"></i></div>
+																<div class="user-title1">Johnson Smith</div>
+																<span>placed a bid on your <ins class="noti-p-link">I Need a ...</ins></span>
+															</a>
+														</div>															
+													</div>											
+												</div>
+
+
+												<div class="user-request-list">
+													<div class="request-users">
+														<div class="user-request-dt">
+															<a href="#">
+																<div class="noti-icon"><i class="fas fa-exclamation"></i></div>
+																
+																<span class="pt-2">Your job listing <ins class="noti-p-link">Wordpress Developer</ins> is expiring.</span>
+															</a>
+														</div>															
+													</div>											
+												</div>
+												<div class="user-request-list">
+													<a href="my_freelancer_notifications.html" class="view-all">View All Notifications</a>
+												</div>	
+											</div>
+										</li>
+										<li>
+											<div class="account order-1 dropdown">
+												<a href="#" class="account-link dropdown-toggle-no-caret" role="button" data-toggle="dropdown"> 
+													<div class="user-dp"><img src="images/dp.jpg" alt=""></div>
+													<span>Hi! User</span>
+													<i class="fas fa-sort-down"></i>
+												</a>
+												<div class="dropdown-menu account-dropdown dropdown-menu-right">
+													<a class="link-item" href="my_freelancer_dashboard.html"> Dashboard</a>
+													<a class="link-item" href="my_freelancer_profile.html"> Profile</a>
+													<a class="link-item" href="my_freelancer_setting.html"> Setting</a>	
+													<a class="link-item" href="index.html"> Logout</a>																		
+												</div>
+											</div>	
+										</li>												
+									</ul>
+								</div>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="browse-section">				
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<div class="view_details">
+							<ul>
+								<li>
+									<div class="vw_items">
+										<i class="fas fa-shield-alt"></i>
+										<div class="vw_item_text">
+											<h6>Verify</h6>
+											<span>Yes</span>
+										</div>
+									</div>
+								</li>								
+								<li>
+									<div class="vw_items">
+										<i class="far fa-money-bill-alt"></i>
+										<div class="vw_item_text">
+											<h6>Client Budget</h6>
+											<span>$2000</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="vw_items">
+										<i class="far fa-clock"></i>
+										<div class="vw_item_text">
+											<h6>Deadline</h6>
+											<span>September 25, 2023</span>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="vw_items">
+										<i class="fas fa-flag"></i>
+										<div class="vw_item_text">
+											<h6>Statues</h6>
+											<span>In Process</span>
+										</div>
+									</div>
+								</li>								
+							</ul>
+						</div>
+						<div class="job-item ptrl_2 mt-20">
+							<div class="job-top-dt">
+								<div class="job-left-dt">
+									<img src="images/homepage/latest-jobs/img-1.jpg" alt="">
+									<div class="job-ut-dts">
+										<a href="#"><h4>Rock William</h4></a>
+										<span><i class="fas fa-map-marker-alt"></i> New York City</span>
+									</div>
+								</div>
+								<div class="job-right-dt">
+									<div class="job-price">$2000</div>
+								</div>
+							</div>
+							<div class="job-des-dt">
+								<h4>I Need a Travel Psd Template</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare nisi id mi pulvinar tristique. Donec id erat condimentum, posuere nibh a, convallis odio. Aenean et tellus risus. Morbi vitae mauris sit amet metus porta varius. Suspendisse potenti. Cras felis ipsum, tristique sit amet tortor at, convallis finibus velit. Aenean eget sapien at quam suscipit posuere. Phasellus gravida eleifend leo, ac dictum elit tincidunt vitae. Aliquam enim nulla, efficitur a augue ut, ultrices convallis ipsum. Integer id ex hendrerit, dapibus lectus condimentum, tincidunt lorem. Ut eleifend varius posuere. Sed non pharetra odio. Phasellus rhoncus egestas dui, eget interdum tellus volutpat in. Phasellus laoreet quam id euismod tristique.</p>
+								
+							</div>
+							<div class="job_dts">
+								<h4>Attachments</h4>
+								<ul class="download_files">
+									<li>
+										<div class="dwn_fls">
+											<div class="dwn-header">
+												<h6>Project Briefing Details</h6>												
+											</div>
+											<div class="dwn-footer">
+												<span>PDF</span>
+												<button class="download_button"><i class="fas fa-download"></i></button>
+											</div>
+										</div>
+									</li>
+									<li>
+										<div class="dwn_fls">
+											<div class="dwn-header">
+												<h6>Images</h6>												
+											</div>
+											<div class="dwn-footer">
+												<span>Zip</span>
+												<button class="download_button"><i class="fas fa-download"></i></button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>							
+						</div>
+						
+					<div class="view_chart_header"></div>
+						<div class="bookmark_card">
+							<button class="bookmark_collapse" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">Client Task Project</button>
+									<div id="collapse1" class="collapse show">
+										<div class="card-body">																				
+											
+							<!-- Start Create Task -->
+							<div class="view_chart_body">
+								<div class="user-request-list">
+									<div class="request-users">
+										<div class="user-request-dt">
+											<div class="noti-icon"><i class="fas fa-user-alt"></i></div>
+												<div class="dash_noti">
+													<div class="user-title3">Rock William </div>
+														<span>Add new task: <a href="#start" class="noti-p-link">I Need a Travel Psd Template.</a></span><br>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare nisi id mi pulvinar tristique. Donec id erat condimentum, posuere nibh a, convallis odio. Aenean et tellus risus. Morbi vitae mauris sit amet metus porta varius. Suspendisse potenti. Cras felis ipsum, tristique sit amet tortor at, convallis finibus velit. Aenean eget sapien at quam suscipit posuere. </p>
+														<div class="social201">
+														<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+														<div class="icon143 y1"> <i class="fas fa-download"></i></div>
+														</div><br>
+												</div>
+										  </div>
+											<div class="time5">2 hrs ago</div>
+												<div class="col-lg-4 plan_dt_right"> 
+													<div class="form-group">
+														<div class="ui fluid search selection dropdown skills-search">
+														<input name="tags" type="hidden" value="0">
+															<i class="dropdown icon"></i>
+															<input class="search" autocomplete="on" tabindex="0">
+															<span class="sizer" style="flex: auto"></span>
+															<div class="default text">Your Responce</div>
+																<div class="menu transition hidden" tabindex="0">
+																	<div class="item">Planning</div>										
+																	<div class="item">Open Idea</div>										
+																	<div class="item">In Progress</div>										
+																	<div class="item">Dev Complete</div>										
+																	<div class="item">Updates Required</div>
+																	<div class="item">Accepted</div>
+																	<div class="item">Closed</div>											
+																</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="view_chart_header"></div>
+												
+												<div class="bookmark_card col-lg-13">
+													<button class="bookmark_collapse" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">Leave a Comment</button>
+														<div id="collapse2" class="collapse show">
+															<div class="card-body">																
+																<ul class="all_applied_jobs jobs_bookmarks">
+																
+																<!-- Start Comment Content -->
+																<li>
+																<div class="user-request-list">
+																	<div class="request-users">
+																		<div class="user-request-dt">
+																		<div class="noti-icon"><i class="fas fa-user-alt"></i></div>
+																		<div class="dash_noti">
+																		<div class="user-title3">Me:</div>
+																		<span>Comment in: <a href="#start" class="noti-p-link">I Need a Travel Psd Template.</a></span><br>
+																		<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare nisi id mi pulvinar tristique. Donec id erat condimentum, posuere nibh a, convallis odio. Aenean et tellus risus. Morbi vitae mauris sit amet metus porta varius. Suspendisse potenti. Cras felis ipsum, tristique sit amet tortor at, convallis finibus velit.</p>
+																
+																		</div>
+																	</div>
+																	<div class="time5">2 hrs ago</div>
+																	</div>											
+																</div>
+																</li>
+																<!-- End Comment Content -->
+																
+																<!-- Start Create Comment -->	
+																<div class="user-request-list">
+																	<div class="request-users">
+																	
+																		<textarea class="textarea_input1" placeholder="Write a comment . . ."></textarea>								
+																
+																	</div>											
+																</div>
+																<!-- End Create Comment -->
+															</ul>
+														</div>
+													</div>																				
+												</div>	
+										</div>	
+									</div>											
+								</div>
+								<!-- End Create Task -->
+						</div>
+					</div>
+				</div>	
+						<div class="view_chart_header"></div>
+						<div class="bookmark_card">
+							<button class="bookmark_collapse" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">My Task Accomplishment</button>
+									<div id="collapse3" class="collapse show">
+										<div class="card-body">																				
+											<ul class="all_applied_jobs jobs_bookmarks">
+												<!-- Start Post Task  Accomplishment-->
+												<li>
+													<div class="user-request-list">
+													<div class="request-users">
+														<div class="user-request-dt">
+															<div class="noti-icon"><i class="fas  fa-user-alt"></i></div>
+															<div class="dash_noti">
+																<div class="user-title3">Me: </div>
+																<span>Accomplishment: <a href="#start" class="noti-p-link">I Need a Travel Psd Template.</a></span><br>
+																<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare nisi id mi pulvinar tristique. Donec id erat condimentum, posuere nibh a, convallis odio. Aenean et tellus risus. Morbi vitae mauris sit amet metus porta varius. Suspendisse potenti. Cras felis ipsum, tristique sit amet tortor at, convallis finibus velit.</p>
+																<div class="social201">
+																<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+																<div class="icon143 y1"> <i class="fas fa-download"></i></div>
+																</div><br>
+										
+															</div>															
+														</div>
+														<div class="time5">2 hrs ago</div>								
+													</div>
+													</div>
+												</li>
+												<!-- End Post Task  Accomplishment-->											
+											</ul>
+										</div>
+								</div>
+						</div>
+					</div>
+							
+									
+					<div class="col-lg-4 col-md-4 mainpage">
+						<div class="total_days mtp_30">4 days 5 hours left</div>
+							<div class="bid_amount">
+							<a href="my_freelancer_messages.html"><button class="apply_job_rt" type="button">Message</button></a>
+								<div class="bookmark_card">
+								<button class="bookmark_collapse" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">Files Attachment</button>
+									<div id="collapse4" class="collapse show">
+										<div class="card-body">																				
+											<ul class="all_applied_jobs jobs_bookmarks">
+												<ul class="all_notes1 scrollstyle_4">
+												<li>
+													<div class="social201">
+													<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+													<div class="icon143 y1"><i class="fas fa-download"></i></div>
+													</div><br>
+													
+													<div class="social201">
+													<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+													<div class="icon143 y1"><i class="fas fa-download"></i></div>
+													</div><br>
+													
+													<div class="social201">
+													<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+													<div class="icon143 y1"><i class="fas fa-download"></i></div>
+													</div><br>
+													
+													<div class="social201">
+													<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+													<div class="icon143 y1"><i class="fas fa-download"></i></div>
+													</div><br>
+													
+													<div class="social201">
+													<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+													<div class="icon143 y1"><i class="fas fa-download"></i></div>
+													</div><br>
+													
+													<div class="social201">
+													<input class="scl_input" type="text" placeholder="387105303_899072111811828_454534106615071142_n" disabled>
+													<div class="icon143 y1"><i class="fas fa-download"></i></div>
+													</div><br>
+												</li>
+												</ul>										
+											</ul>
+										</div>
+									</div>
+								</div>
+						</div>						
+						
+						
+						<div class="bookmark_card">
+							<button class="bookmark_collapse" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">Project Overview</button>
+									<div id="collapse5" class="collapse show">
+										<div class="card-body">																				
+											<ul class="all_applied_jobs jobs_bookmarks">
+												<li>
+													
+														<h6>Project Completeness</h6>
+															<div class="group_bar1">
+																<span>85%</span>
+															<div class="progress skill_process">
+															<div class="progress-bar progress_bar_skills" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+															</div>
+														</div>
+													
+												</li>										
+											</ul>
+										</div>
+									</div>
+							</div>
+								<div class="bookmark_card">
+									<button class="apply_job_rt" type="button" data-toggle="modal" data-target="#applyjobModal">Create A Accomplishment</button>
+								</div>
+								
+									<div class="view_chart">
+										<div class="view_chart_header">
+											<h4>Project Notes</h4>										
+										</div>
+										<div class="view_chart_body">
+											<ul class="all_notes scrollstyle_4">
+												<li>
+													<div class="note_item">
+														<div class="note_left">
+															<div class="priorty">High Priorty</div>
+														</div>
+														<div class="note_right">
+															<button class="note_btn" type="button" data-toggle="modal" data-target="#addnoteModal"><i class="far fa-edit"></i></button>
+															<button class="note_btn"><i class="far fa-trash-alt"></i></button>
+														</div>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis accumsan mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis accumsan mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis accumsan mi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis accumsan mi.</p>
+													</div>
+												</li>
+												<li>
+													<div class="note_item">
+														<div class="note_left">
+															<div class="priorty priorty_low">Low Priorty</div>
+														</div>
+														<div class="note_right">
+															<button class="note_btn" type="button" data-toggle="modal" data-target="#addnoteModal"><i class="far fa-edit"></i></button>
+															<button class="note_btn"><i class="far fa-trash-alt"></i></button>
+														</div>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis accumsan mi.</p>
+													</div>
+												</li>
+												<li>
+													<div class="note_item">
+														<div class="note_left">
+															<div class="priorty">High Priorty</div>
+														</div>
+														<div class="note_right">
+															<button class="note_btn" type="button" data-toggle="modal" data-target="#addnoteModal"><i class="far fa-edit"></i></button>
+															<button class="note_btn"><i class="far fa-trash-alt"></i></button>
+														</div>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis accumsan mi.</p>
+													</div>
+												</li>
+												<li>
+													<div class="note_item">
+														<div class="note_left">
+															<div class="priorty priorty_medium">Medium Priorty</div>
+														</div>
+														<div class="note_right">
+															<button class="note_btn" type="button" data-toggle="modal" data-target="#addnoteModal"><i class="far fa-edit"></i></button>
+															<button class="note_btn"><i class="far fa-trash-alt"></i></button>
+														</div>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis accumsan mi.</p>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="add_note">
+											<button class="add_note_btn" type="button" data-toggle="modal" data-target="#addnoteModal">Add Note</button>
+										</div>
+									</div>
+						</div>	
+			      </div>
+			</div>					
+		</main>
+		<!-- Body End -->
+		
+		<!-- Scroll to Top Button Start -->
+		<button onclick="topFunction()" id="pageup" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+		<!-- Scroll to Top Button End -->
+		<!-- Scripts js -->	
+		<script src="js/jquery.min.js"></script>
+		<script src="js/datepicker.min.js"></script>
+		<script src="js/i18n/datepicker.en.js"></script>
+		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="vendor/OwlCarousel/owl.carousel.js"></script>
+		<script src="vendor/semantic/semantic.min.js"></script>
+		<script src="js/jquery.range-min.js"></script>
+		<script src="js/custom1.js"></script>
+		
+		<!-- Java script preloader -->
+    	<script src="js/scripts.js"></script>
+		
+		
+	</body>
+	
+</html>
